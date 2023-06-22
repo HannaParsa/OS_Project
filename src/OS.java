@@ -79,13 +79,8 @@ public class OS {
     public static void main(String[] args) throws IOException {
         int num;
         Scanner scanner = new Scanner(System.in);
-        //Socket clientSocket = new Socket("127.0.0.1", 5000);
-        //System.out.println("connected to the server");
-        //DataInputStream din = new DataInputStream(clientSocket.getInputStream());
-        //frame = din.readInt();
         frame = 3;
         System.out.println("frame number is: " + frame);
-        //num = din.readInt();
         num = scanner.nextInt();
         while (num != 0) {
             fifoCheck(num);
@@ -95,7 +90,6 @@ public class OS {
             System.out.println(hashSet);
             System.out.println(second_chance);
             System.out.println("_________________");
-            //num = din.readInt();
             num = scanner.nextInt();
         }
         System.out.println("LRU:<" + lru_fault + ">," + "FIFO:<" + fifo_fault + ">," + "Second-chance:<" + chance_fault + ">");
