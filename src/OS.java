@@ -78,14 +78,13 @@ public class OS {
 
     public static void main(String[] args) throws IOException {
         int num;
-        int count;
         Scanner scanner = new Scanner(System.in);
         frame = 3;
         System.out.println("frame number is: " + frame);
      /* System.out.println("enter the numbers");
         count = scanner.nextInt();*/
         num = scanner.nextInt();
-        while (num != 0) {
+        while (num != -1) {
             fifoCheck(num);
             lruCheck(num);
             sChanceCheck(num);
