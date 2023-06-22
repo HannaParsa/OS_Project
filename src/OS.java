@@ -46,8 +46,8 @@ public class OS {
         } else {
             lru.remove(num);
         }
-        hashSet.add(num);
         lru.push(num);
+        hashSet.add(num);
     }
 
     // second-chance algorithm
@@ -78,9 +78,12 @@ public class OS {
 
     public static void main(String[] args) throws IOException {
         int num;
+        int count;
         Scanner scanner = new Scanner(System.in);
         frame = 3;
         System.out.println("frame number is: " + frame);
+     /* System.out.println("enter the numbers");
+        count = scanner.nextInt();*/
         num = scanner.nextInt();
         while (num != 0) {
             fifoCheck(num);
