@@ -78,6 +78,8 @@ public class OS {
 
     public static void main(String[] args) throws IOException {
         int num;
+        String lruString="";
+
         Scanner scanner = new Scanner(System.in);
         frame = 3;
         System.out.println("frame number is: " + frame);
@@ -88,8 +90,10 @@ public class OS {
             fifoCheck(num);
             lruCheck(num);
             sChanceCheck(num);
+            Iterator<Integer> itr = lru.iterator();
+            lruString =lruString+", "+ itr.next();
             System.out.println(fifo);
-            System.out.println(hashSet);
+            System.out.println(lruString);
             System.out.println(second_chance);
             System.out.println("_________________");
             num = scanner.nextInt();
