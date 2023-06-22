@@ -94,6 +94,7 @@ public class OS {
             lruString =lruString+", "+ itr.next();
             System.out.println(fifo);
             System.out.println(lruString);
+            System.out.println(lru);
             System.out.println(second_chance);
             System.out.println("_________________");
             num = scanner.nextInt();
