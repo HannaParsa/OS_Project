@@ -78,23 +78,23 @@ public class OS {
 
     public static void main(String[] args) throws IOException {
         int num;
-        String lruString="";
+        //String lruString="";
 
         Scanner scanner = new Scanner(System.in);
         frame = 3;
         System.out.println("frame number is: " + frame);
-     /* System.out.println("enter the numbers");
+      /*System.out.println("enter the numbers");
         count = scanner.nextInt();*/
         num = scanner.nextInt();
         while (num != -1) {
             fifoCheck(num);
             lruCheck(num);
             sChanceCheck(num);
-            Iterator<Integer> itr = lru.iterator();
-            lruString =lruString+", "+ itr.next();
+            //Iterator<Integer> itr = lru.iterator();
+            //lruString =lruString+", "+ itr.next();
             System.out.println(fifo);
-            System.out.println(lruString);
-            System.out.println(lru);
+            //System.out.println(lruString);
+            System.out.println(hashSet);
             System.out.println(second_chance);
             System.out.println("_________________");
             num = scanner.nextInt();
